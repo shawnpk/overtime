@@ -1,16 +1,18 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show]
+  before_action :set_post, only: [:show, :edit, :update]
 
   def index
-    @posts = Post.all
+    @posts = Post.order('created_at ASC')
   end
 
   def show
-
   end
 
   def new
     @post = Post.new
+  end
+
+  def edit
   end
 
   def create
@@ -21,6 +23,14 @@ class PostsController < ApplicationController
       redirect_to @post, notice: 'Your post has been created successfully'
     else
       render :new, notice: 'There was a problem creating your post'
+    end
+  end
+
+  def update
+    if @post.update(post_params)
+      redirect_to @post, notice: 'Your post has been updated'
+    else
+      render :edit, notice: 'Your post was not edited'
     end
   end
 
