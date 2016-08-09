@@ -1,9 +1,16 @@
-<%= form_for @post do |f| %>
-  <%= f.label :date %><br>
-  <%= f.text_field :date, placeholder: 'format: mm/dd/yyy' %><br>
+<%= form_for @post, class: 'form-horizontal' do |f| %>
 
-  <%= f.label :rationale %><br>
-  <%= f.text_area :rationale %><br>
+  <div class="form-group">
+    <%= f.label :date, class: 'col-sm-2 control-label' %>
+    <%= f.date_field :date, placeholder: 'format: mm/dd/yyy', class: 'form-control' %>
 
-  <%= f.submit 'Save' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :rationale, class: 'col-sm-2 control-label' %>
+    <%= f.text_area :rationale, class: 'form-control' %>
+
+  </div>
+
+  <%= f.submit 'Save', class: 'btn btn-primary btn-block' %>
 <% end %>
