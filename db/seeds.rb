@@ -1,5 +1,7 @@
 @user = User.create email: 'test@test.com', password: 'password', password_confirmation: 'password', first_name: 'Shawn', last_name: 'Kearney'
 
+@admin_user = User.create email: 'admin@test.com', password: 'password', password_confirmation: 'password', first_name: 'Shawn', last_name: 'Kearney', type: 'AdminUser'
+
 puts '1 user created'
 
 100.times do |post|
