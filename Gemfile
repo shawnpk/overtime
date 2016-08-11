@@ -17,6 +17,7 @@ gem 'rails_12factor', '~> 0.0.3'
 gem 'gritter', '~> 1.2'
 gem 'administrate', '~> 0.2.2'
 gem 'bourbon'
+gem 'pundit', '~> 1.1'
 
 group :development, :test do
   gem 'byebug'
