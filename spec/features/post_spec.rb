@@ -5,9 +5,9 @@ describe 'navigate to post' do
   let(:post) do
     Post.create date: Date.today, rationale: 'Rationale', user_id: user.id
   end
+
   before do
-    @user = FactoryGirl.create :user
-    login_as(@user, :scope => :user)
+    login_as(user, :scope => :user)
   end
 
   describe ' index' do
