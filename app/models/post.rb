@@ -3,8 +3,9 @@ class Post < ActiveRecord::Base
 
   belongs_to :user
 
-  validates :date,      presence: true
-  validates :rationale, presence: true
+  validates :date,              presence: true
+  validates :rationale,         presence: true
+  validates :overtime_request,  presence: true, numericality: { greater_than: 0.0 }
 
   scope :posts_by, ->(user) { where(user_id: user.id) }
 end

@@ -1,9 +1,14 @@
 <%= form_for @post, class: 'form-horizontal' do |f| %>
   <% if @post.errors.any? %>
     <% @post.errors.full_messages.each do |error| %>
-      <%= js add_gritter(error, title: "Overtime Notification", sticky: false, image: :notice) %>
+      <%= js add_gritter(error, title: "Overtime Notification", sticky: false) %>
     <% end %>
   <% end %>
+
+  <div class="form-group">
+    <%= f.label :overtime_request, class: 'col-sm-2 control-label' %>
+    <%= f.number_field :overtime_request, class: 'form-control', step: 0.5 %>
+  </div>
 
   <div class="form-group">
     <%= f.label :date, class: 'col-sm-2 control-label' %>
