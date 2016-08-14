@@ -12,5 +12,3 @@ module SmsTool
     )
   end
 end
-
-# SmsTool.send_sms(number: '3108641460', message: "Look at me. I'm in a text.")
