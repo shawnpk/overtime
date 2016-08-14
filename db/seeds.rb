@@ -4,7 +4,7 @@
                     first_name: 'Shawn',
                     last_name: 'Kearney',
                     phone: '3108641460'
-                    
+
 puts '1 user created'
 
 AdminUser.create email: 'admin@test.com',
@@ -21,3 +21,9 @@ puts '1 admin_user created'
 end
 
 puts '100 posts have been created'
+
+100.times do |audit_log|
+  AuditLog.create! user_id: User.last.id, status: 0, start_date: (Date.today - 6.days)
+end
+
+puts '100 audit logs have been created'
