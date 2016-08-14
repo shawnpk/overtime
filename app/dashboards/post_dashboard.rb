@@ -15,6 +15,7 @@ class PostDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime.with_options(searchable: false),
     updated_at: Field::DateTime.with_options(searchable: false),
     status: Field::Text.with_options(searchable: true),
+    overtime_request: Field::Text.with_options(searchable: false),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -27,6 +28,8 @@ class PostDashboard < Administrate::BaseDashboard
     :status,
     :date,
     :rationale,
+    :overtime_request,
+    :status,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -39,6 +42,8 @@ class PostDashboard < Administrate::BaseDashboard
     :rationale,
     :created_at,
     :updated_at,
+    :overtime_request,
+    :status,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -48,6 +53,8 @@ class PostDashboard < Administrate::BaseDashboard
     :user,
     :date,
     :rationale,
+    :overtime_request,
+    :status,
   ].freeze
 
   # Overwrite this method to customize how posts are displayed
