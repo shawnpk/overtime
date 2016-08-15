@@ -10,16 +10,12 @@ module ApplicationHelper
   private
     def status_span_generator status
       case status
-      when 'submitted'
+      when 'submitted', 'pending'
         content_tag(:span, status.titleize, class: 'label label-primary')
-      when 'approved'
+      when 'approved', 'confirmed'
         content_tag(:span, status.titleize, class: 'label label-success')
       when 'rejected'
         content_tag(:span, status.titleize, class: 'label label-danger')
-      when 'pending'
-        content_tag(:span, status.titleize, class: 'label label-primary')
-      when 'confirmed'
-        content_tag(:span, status.titleize, class: 'label label-success')
       end
     end
 end
