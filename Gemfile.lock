@@ -304,6 +304,7 @@ DEPENDENCIES
   guard-livereload (~> 2.5, >= 2.5.2)
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari (~> 0.17.0)
   pg (~> 0.15)
   puma (~> 3.6)
   pundit (~> 1.1)
