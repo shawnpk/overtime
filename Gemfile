@@ -37,3 +37,7 @@ group :development do
   gem 'guard', '~> 2.14'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
+
+group :production do
+  gem 'rails_12factor', '~> 0.0.3'
+end
