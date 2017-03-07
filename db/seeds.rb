@@ -7,12 +7,12 @@
 
 puts '1 employee created'
 
-AdminUser.create email: 'shawnpk@ineptsoftware.com',
+AdminUser.create email: 'admin@test.com',
                  password: 'password',
                  password_confirmation: 'password',
                  first_name: 'Admin',
                  last_name: 'Name',
-                 phone: '3108641460'
+                 phone: '2134567890'
 
 puts '1 Admin user created'
 
