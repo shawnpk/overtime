@@ -1,2 +1,27 @@
-== README
+== Overtime App
+Keep track of salaried employees Overtime
 
+== Models
+- admin_user
+- audit_log
+- employee
+- post
+- user
+
+== Gems
+- [administrate](https://rubygems.org/gems/administrate)
+- [bootstrap](https://rubygems.org/gems/bootstrap)
+- (bourbon)[https://rubygems.org/gems/bourbon]
+- [capybara](https://rubygems.org/gems/capybara)
+- [database_cleaner](https://rubygems.org/gems/database_cleaner)
+- [devise](https://rubygems.org/gems/devise)
+- [dotenv-rails](https://rubygems.org/gems/dotenv-rails)
+- [factory_bot_rails](https://rubygems.org/gems/factory_bot_rails)
+- [font-awesome-rails](https://rubygems.org/gems/font-awesome-rails)
+- [gritter](https://rubygems.org/gems/gritter)
+- [jquery-rails](https://rubygems.org/gems/jquery-rails)
+- [kaminari](https://rubygems.org/gems/kaminari)
+- [pry-rails](https://rubygems.org/gems/pry-rails)
+- [pundit](https://rubygems.org/gems/pundit)
+- [rspec-rails](https://rubygems.org/gems/rspec-rails)
+- [twilio-ruby](https://rubygems.org/gems/twilio-ruby)
