@@ -2,7 +2,7 @@
 Keep track of salaried employees overtime
 
 === Gems
-- (administrate) [https://rubygems.org/gems/administrate]
+- [administrate] (https://rubygems.org/gems/administrate)
 - better_errors
 - bootstrap-sass
 - bourbon
