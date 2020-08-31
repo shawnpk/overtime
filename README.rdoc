@@ -2,13 +2,20 @@
 Keep track of salaried employees overtime
 
 === Gems
-- administrate
+- (administrate) [https://rubygems.org/gems/administrate]
+- better_errors
+- bootstrap-sass
 - bourbon
+- capybara
+- database_cleaner
 - devise
 - dotenv-rails
-- bootstrap-sass
+- factory_girl_rails
 - gritter
+- guard
+- guard-livereload
 - kaminari
 - puma
 - pundit
+- rspec-rails
 - twilio-ruby
