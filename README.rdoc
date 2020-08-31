@@ -1,2 +1,14 @@
-== README
+== Overtime
+Keep track of salaried employees overtime
 
+=== Gems
+administrate
+bourbon
+devise
+dotenv-rails
+bootstrap-sass
+gritter
+kaminari
+puma
+pundit
+twilio-ruby
